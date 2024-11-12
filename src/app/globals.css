@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.code-font {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+
+::-webkit-scrollbar {
+  background: #000;
+  width: 8px;
+  borde-radius: 99999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #001240;
+  width: 8px;
+  border-radius: 99999px;
+}
+
+.bg-card-gradient{ 
+  background: linear-gradient(180deg, #351CBC, #180D56)
+}
+
+.bg-gradient-carousel {
+    background: linear-gradient(90deg, #351CBC, #180D56);
+}
+
+
+.text-gradient-blue {
+  background: linear-gradient(90deg, #5D40FE, #FFFF);
+  -webkit-background-clip: text; 
+  color: transparent; 
+}
+
+
+
+@keyframes slideCarousel {
+
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.carousel {
+  overflow: hidden;
+  padding: 30px 0;
+  white-space: nowrap;
+  margin-top: 8rem;
+}
+
+.carousel::after, .carousel::before {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+
+
+.carousel-slide {
+  animation: 35s slideCarousel infinite linear;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-slide p {
+  margin: 0 40px;
+  font-size: 20px;
+}
+
+.neon-border {
+  @apply relative rounded-2xl py-[30px] lg:p-1 border border-transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.neon-border::before {
+  content: '';
+  @apply absolute inset-0 rounded-2xl;
+  padding: 1px; /* ajuste o valor para aumentar ou diminuir a espessura da borda */
+  background: linear-gradient(90deg, #ffff, #000, #4D00FF, #09377B); /* gradiente neon */
+  background-size: 200% 200%;
+  animation: neon-border-running 3s linear infinite; /* animação da borda */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+
+@keyframes neon-border-running {
+0% {
+  background-position: 0% 50%;
+}
+100% {
+  background-position: 200% 50%;
+}
+}
