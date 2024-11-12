@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins, JetBrains_Mono } from "@next/font/google";
+import { Poppins, JetBrains_Mono } from "next/font/google";  
 import "./globals.css";
+
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],  
   subsets: ["latin"],
 });
 
@@ -14,7 +15,6 @@ const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "Linktree DevGustavoGantois",
   description: "Meios de contato para solicitar orçamentos e conhecer minha experiência profissional como desenvolvedor web.",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
