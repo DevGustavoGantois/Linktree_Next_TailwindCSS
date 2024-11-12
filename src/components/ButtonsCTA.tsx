@@ -8,7 +8,7 @@ export function ButtonsCTA() {
     const currentTranslations = translations[language];
 
     return (
-        <section className="mt-20 mb-40 lg:mt-6 m-12">
+        <section className="mt-32 mb-32 lg:mt-6 m-12">
             <div className="flex flex-col gap-2">
                 <a href="https://devgustavogantois.vercel.app/" target="_blank" data-aos="fade-up" className="transition-all duration-700 hover:animate-float">
                     <button className="flex flex-col gap-4 bg-1 bg-center bg-cover w-full mt-8 p-2 rounded-lg neon-border relative">
