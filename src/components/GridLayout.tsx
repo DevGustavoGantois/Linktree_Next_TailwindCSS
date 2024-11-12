@@ -8,7 +8,7 @@ export function GridLayout() {
     const currentTranslations = translations[language];
 
     return (
-        <section className="mt-8 mb-40 lg:mb-0">
+        <section className="mt-8 mb-36 lg:mb-0">
             <div className="flex-col flex lg:flex-row gap-8">
                 <div>
                     <div className="bg-card-gradient p-1 rounded-2xl m-3 mt-2 neon-border relative" data-aos="fade-down">
