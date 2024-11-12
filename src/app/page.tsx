@@ -19,9 +19,6 @@ export default function Home() {
 
   return (
     <LanguageProvider>
-      <header>
-      <meta name="google-site-verification" content="M4Pw1J2X-V6c2FotMav2KX72M48-Zvp0Lhnc9Q4qOnI" />
-      </header>
       <main>
         <div className="flex justify-center items-center mt-20">
           <div className="py-6 lg:py-14 bg-[#000000] rounded-2xl overflow-hidden relative">

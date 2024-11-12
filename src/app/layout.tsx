@@ -27,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <header>
+      <meta name="google-site-verification" content="M4Pw1J2X-V6c2FotMav2KX72M48-Zvp0Lhnc9Q4qOnI" />
+      </header>
       <body
         className={`${jetBrainsMono.variable} ${poppins.variable} antialiased bg-custom-gradient h-full w-full`}
       >
