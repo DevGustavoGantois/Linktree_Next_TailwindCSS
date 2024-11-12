@@ -8,7 +8,7 @@ export function ButtonsCTA() {
     const currentTranslations = translations[language];
 
     return (
-        <section className="mt-4 m-12">
+        <section className="mt-20 mb-32 lg:mt-6 m-12">
             <div className="flex flex-col gap-2">
                 <a href="https://devgustavogantois.vercel.app/" target="_blank" data-aos="fade-up" className="transition-all duration-700 hover:animate-float">
                     <button className="flex flex-col gap-4 bg-1 bg-center bg-cover w-full mt-8 p-2 rounded-lg neon-border relative">
@@ -21,7 +21,7 @@ export function ButtonsCTA() {
                         </div>
                     </button>
                 </a>
-                <a href="https://wa.me/5571999588246?text=Ol%C3%A1!%20Tudo%20bem%20Gustavo!?%20Quero%20solicitar%20um%20or%C3%A7amento!!" target="_blank" data-aos="fade-up" data-aos-delay="200" className="transition-all duration-700 hover:animate-float">
+                <a href="https://wa.me/5571999588246?text=Ol%C3%A1!%20Tudo%20bem%20Gustavo!?%20Quero%20solicitar%20um%20or%C3%A7amento!!" target="_blank" data-aos="fade-up" className="transition-all duration-700 hover:animate-float">
                     <button className="flex flex-col gap-4 bg-3 bg-center bg-cover w-full mt-8 p-2 rounded-lg neon-border relative">
                         <h1 className="text-white text-xl lg:text-2xl m-3 font-jetbrains z-10">{currentTranslations[0].title_two}</h1>
                         <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-40">
@@ -33,7 +33,7 @@ export function ButtonsCTA() {
                     </button>
                 </a>
                 
-                <a href="mailto:gugagantoisdev@gmail.com" target="_blank" data-aos="fade-up" data-aos-delay="400" className="transition-all duration-700 hover:animate-float">
+                <a href="mailto:gugagantoisdev@gmail.com" target="_blank" data-aos="fade-up" className="transition-all duration-700 hover:animate-float">
                     <button className="flex flex-col gap-4 bg-4 bg-center bg-cover w-full mt-8 p-2 rounded-lg neon-border relative">
                         <h1 className="text-white text-xl lg:text-2xl m-3 font-jetbrains z-10">{currentTranslations[0].title_four}</h1>
                         <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-40">
