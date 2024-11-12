@@ -4,13 +4,13 @@ import "./globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
