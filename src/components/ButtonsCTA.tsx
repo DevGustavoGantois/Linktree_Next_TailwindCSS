@@ -10,7 +10,7 @@ export function ButtonsCTA() {
     return (
         <section className="mt-32 mb-32 lg:mt-6 m-12">
             <div className="flex flex-col gap-2">
-                <a href="https://devgustavogantois.vercel.app/" target="_blank" data-aos="fade-up" className="transition-all duration-700 hover:animate-float">
+                <a href="https://portfolio-dev-gustavo-gantois.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAaegYkZtkgs8AtO0GIOTauXUq5bQaGK2Np2UTD2Y6chnIdtOedWqiAp8ko-eqg_aem_GoD20I807X6MB5iqylPdag" target="_blank" data-aos="fade-up" className="transition-all duration-700 hover:animate-float">
                     <button className="flex flex-col gap-4 bg-1 bg-center bg-cover w-full mt-8 p-2 rounded-lg neon-border relative">
                         <h1 className="text-white text-xl lg:text-2xl m-3 font-jetbrains z-10">{currentTranslations[0].title_one}</h1>
                         <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-40">
